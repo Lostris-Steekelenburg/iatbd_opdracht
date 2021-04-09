@@ -17,7 +17,7 @@ class CreateHuisdierTable extends Migration
             $table->id();
             $table->string("huisdiernaam");
             $table->string("soort");
-            $table->unsignedInteger("baasje_id");
+            $table->unsignedInteger("baasje_id")->nullable();
             $table->foreign("baasje_id")->references("id")->on("users");
             $table->string("image");
             $table->string("oppasDatum");
