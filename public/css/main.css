@@ -440,8 +440,13 @@ body{
     }
 
     .informatieGridcard_image{
+        width: 60%;
+        height: 30%;
+    }
+
+    .informatieGridcard_image_huisdier {
         width: 40%;
-        height: 80%;
+        height: 35%;
     }
 
     .informatieGridcard_button{
