@@ -1,0 +1,461 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    background-color: #e9e4e6;
+    font-family: sans-serif;
+}
+
+.nav {
+    background-color: #048998;
+    overflow: hidden;
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #e9e4e6;
+    color: black;
+}
+
+.oppasGridCard, .huisdierGridCard{
+    width: 90%;
+    position: relative;
+    box-shadow: 0 0 5rem black;
+}
+
+.oppasGridCard > a, .huisdierGridCard > a, .informatieGridcard > a{
+    text-decoration: none;
+}
+
+.oppasGridCard > a > article, .huisdierGridCard > a > article, .informatieGridcard > a > article{
+    width: 100%;
+    height: 100%;
+}
+
+.oppasGridCard > article, .huisdierGridCard > article, .informatieGridcard > article{
+    width: 100%;
+    height: 100%;
+}
+
+.oppasGridCard_heading, .huisdierGridCard_heading{
+    padding-left: 2rem;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reacties_heading{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.huisdierGridCard_text, .informatieGridcard_text{
+    padding: 2rem;
+    color:black;
+}
+
+.huisdierGridCard{
+    grid-column: span 4;
+    height: 45rem; 
+}
+
+.huisdierGridCard_header{
+    width: 100%;
+    height: 10%;
+}
+
+.huisdierGridCard_figure{
+    width: 100%;
+    height: 70%;
+}
+
+.huisdierGridCard_image{
+    width: 60%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3rem;
+}
+
+.informatieGridcard_btnsection{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.oppasGridCard{
+    grid-column: span 5;
+    height: 40rem; 
+    margin-left: 12rem;
+}
+
+.oppasGridCard_header{
+    width: 100%;
+    height: 20%;
+}
+
+.oppasGridCard_figure{
+    width: 100%;
+    height: 60%;
+}
+
+.oppasGridCard_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.oppasGridCard_button, .huisdierGridCard_button, .informatieGridcard_button{
+    font-size: 100%;
+    width: 18rem;
+    height: 5rem;
+    box-sizing: border-box;
+    background-color: #048998;
+    border: none;
+    color: #eeeeee;
+    box-shadow: 0 0 5rem black;
+    transition: 0.2s all;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.oppasGridCard_button:hover, .huisdierGridCard_button:hover, .informatieGridcard_button:hover, .create-form__button:hover{
+    cursor: pointer;
+    background-color: #0d335d;
+}
+
+.informatieGridcard{
+    width: 60%;
+    height: 72rem;
+    box-shadow: 0 0 5rem rgba(7, 104, 159, 0.5);
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.informatieGridcard_p{
+    padding: 1rem;
+    font-size: 100%;
+}
+
+.reacties_p{
+    padding: 1rem;
+    padding-left: 2rem;
+    font-size: 120%;
+}
+
+.informatieGridcard_image{
+    padding-top: 1rem;
+    width: 70%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
+
+.informatieGridcard_image_huisdier{
+    padding-top: 1rem;
+    width: 35%;
+    height: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
+
+.create-form__article{
+    width: 80%;
+    height: 103rem;
+    box-shadow: 0 0 5rem black;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-form__article__oppas{
+    width: 80%;
+    height: 52rem;
+    box-shadow: 0 0 5rem black;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-form__article__review{
+    width: 80%;
+    height: 60rem;
+    box-shadow: 0 0 5rem black;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-form{
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 0 5rem rgba(7, 104, 159, 0.5);
+    min-height: 70vh;
+    display: flex;
+    color: black;
+}
+
+.create-form__section__first{
+    padding-top: 2rem;
+}
+
+.create-form__form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.create-form__label{
+    padding: 1rem;
+    font-size: 80%;
+}
+
+.create-form__input{
+    display: block;
+    width: 80%;
+    margin-top: 1rem;
+    font-size: 100%;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.create-form__input--big{
+    height: 20rem;
+}
+
+.create-form__section{
+    margin-top: 4rem;
+    font-size: 140%;
+    width: 100%;
+}
+
+.create-form__button{
+    margin-top: 2rem;
+    font-size: 100%;
+    width: 20rem;
+    height: 6rem;
+    box-sizing: border-box;
+    background-color: #048998;
+    border: none;
+    color: #eeeeee;
+    box-shadow: 0 0 5rem black;
+    transition: 0.2s all;
+    margin-bottom: 2rem;
+}
+
+.u-grid-12{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+}
+
+.u-grid-gap-2{
+    gap: 2rem;
+}
+
+.u-list-style-none{
+    list-style: none;
+}
+
+.u-flex-v-center{
+    display: flex;
+    align-items: center;
+}
+
+.a-popup{
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+}
+
+.a-popup:nth-of-type(2n){
+    animation-delay: 0.2s;
+}
+
+.filter-section{
+    width: 100%;
+    color: black;
+    padding: 1.5rem;
+    font-size: 120%;
+}
+
+.filter-section__label{
+    margin-left: 2rem;
+}
+
+@keyframes popup{
+    0%{
+        transform: scale(1.05) translateY(2rem);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media(max-width: 64rem){
+    .huisdierGridCard{
+        grid-column: span 6;
+    }
+
+    .create-form{
+        width: 90%;
+    }
+}
+
+@media(min-width: 56.25rem){
+    .topnav {
+        display: none;
+    }
+}
+
+@media(max-width: 56.25rem){
+    .nav{
+        display:none;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #048998;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    
+    .topnav #myLinks {
+        display: none;
+        list-style-type: none;
+    }
+    
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+    }
+    
+    .topnav a.icon {
+        background-color: #048998;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav a:hover {
+        background-color: #048998;
+        color: white;
+    }
+    
+    .topnav a.menu {
+        background-color: #048998;
+        color: white;
+    }
+
+    .oppasGridCard{
+        grid-column: span 6;
+        margin-left: 2rem;
+    }
+
+    .huisdierGridCard{
+        grid-column: span 6;
+    }
+
+    .informatieGridcard{
+        width: 100%;
+    }
+
+    .informatieGridcard_text{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .informatieGridcard_p{
+        font-size: 120%;
+    }
+}
+
+@media(max-width: 37.5rem){
+    .huisdierGridCard{
+        grid-column: span 12;
+    }
+
+    .huisdierGridCard_button{
+        width:15rem;
+        height: 6rem;
+    }
+
+    .informatieGridcard_button{
+        width:15rem;
+        height: 6rem;
+    }
+
+    .informatieGridcard_text{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .informatieGridcard_image{
+        width: 40%;
+        height: 80%;
+    }
+
+    .informatieGridcard_button{
+        font-size: 80%;
+        width: 12rem;
+        height: 5rem;
+    }
+}
+
+@media(max-width: 32.5rem){
+    .oppasGridCard{
+        grid-column: span 12;
+    }
+}
+
+
+
